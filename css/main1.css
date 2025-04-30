@@ -171,7 +171,7 @@ img{
 }
 .logo{padding-top: .5rem;}
 .menu{
-    position:fixed;
+    position:absolute;
     right:0px;
     top:70px;
     background-color: #BC195C;
@@ -195,7 +195,7 @@ img{
 } 
 .bar{
     height:2px;
-    width:27px;
+    width:15px;
     background: var(--bg-color);
     margin: 2.5px 0;
     align-self: center;
@@ -231,8 +231,7 @@ img{
     background-color: var(--primary-color);
     position: relative;
     height: 370px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: auto 1.5rem;
 }
 /* .heroText{
     padding-top:2.5em;
@@ -533,7 +532,7 @@ footer{
     height: 100%;
     max-height: 100vh;
     z-index: 100;
-    display: none;
+    /* display: none; */
 }
 .popupImage span {
     position: absolute;

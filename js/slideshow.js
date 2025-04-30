@@ -7,6 +7,7 @@ images[currentIndex].classList.add('active');
 setInterval(() => {
     images[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % 4;
+    console.log(currentIndex);
     images[currentIndex].classList.add('active');
 }, 3000);
 
