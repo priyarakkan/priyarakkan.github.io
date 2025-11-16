@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <h2 class="title">User Authentication</h2>
+    <div class="form-box" id="loginBox">
+        
+        <h2>Login</h2>
+        
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPass" placeholder="Password">
+        <button onclick="login()">Submit</button>
+        
+        <span onclick="showRegister()">Don't have an account? Register</span>
+        <p class="msg" id="loginMsg"></p>
+    </div>
+
+    <div class="form-box hidden" id="registerBox">
+        <h2>Register</h2>
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPass" placeholder="Password">
+        <input type="password" id="regConfirmPass" placeholder="Confirm Password">
+        <button onclick="register()">Register</button>
+        
+        <span onclick="showLogin()">Already have an account? Login</span>
+        <p class="msg" id="regMsg"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

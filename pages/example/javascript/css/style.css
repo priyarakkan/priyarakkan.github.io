@@ -1,0 +1,44 @@
+:root{
+    --softPeach:#f7dad9;
+    --pastelBlue:#c8e7ed;
+    --lavendar:#ead7f7;
+    --lightCream:#fdf7e4;
+    --softSage:#a1cda8;
+
+    --deepNavy:#0f172a;
+    --slate:#1e293b;
+    --skyBlue:#38bdf8;
+    --limeAccent:#a3e635;
+    --offWhite:#f8fafc;
+}
+html{
+    scroll-behavior: smooth;
+}
+/****************
+      Header 
+***************/
+header{
+    background-color: var(--pastelBlue);
+    color: var(--deepNavy);
+    font-size: 4rem;
+}
+body{
+    background-color: var(--lightCream);
+}
+.cards{
+    margin:1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.cards>div {
+    border:solid 1px var(--lavendar);
+    border-radius: 5px;
+    width:300px;
+    height: 200px;
+    cursor: pointer;
+    background-color: var(--lavendar);
+    color:#333;
+    font-size: 2.5rem;
+    text-align: center;
+}
