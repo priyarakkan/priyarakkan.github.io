@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi Step Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>Registration Form</h2>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="step active"><p>1</p><span>Personal</span></div>
+      <div class="step"><p>2</p><span>Contact</span></div>
+      <div class="step"><p>3</p><span>Account</span></div>
+    </div>
+
+    <form id="multiForm">
+
+      <!-- STEP 1 -->
+      <div class="form-step active">
+        <h3>Personal Information</h3>
+        <label>First Name</label>
+        <input type="text" required />
+
+        <label>Last Name</label>
+        <input type="text" required />
+
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="form-step">
+        <h3>Contact Information</h3>
+
+        <label>Email</label>
+        <input type="email" required />
+
+        <label>Phone</label>
+        <input type="tel" required />
+
+        <div class="buttons">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="form-step">
+        <h3>Account Setup</h3>
+
+        <label>Username</label>
+        <input type="text" required />
+
+        <label>Password</label>
+        <input type="password" required />
+
+        <div class="buttons">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </div>
+
+    </form>
+
+    <p class="success-msg" id="successMsg"></p>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

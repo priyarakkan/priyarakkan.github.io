@@ -1,0 +1,67 @@
+Javascript Project
+1.Handwritten Text Generator
+2.Country Guide App
+3.Event Calendar
+4.Testimonial Section
+5.Signature pad
+6.currency formatter
+7.custom video player
+8.flashcard App
+9.Text to Speech Converter
+10.OTP Authentication
+11.image Slider
+12.Advanced Dictionary
+13.Dynamic Table Generator 
+14.Random Joke Genrator
+15.Palindrome Checker
+16.Hangman Game- 
+    This project is an interactive web-based Hangman game 
+    that challenges players to guess a randomly selected word from various categories. 
+    Users can choose from categories such as fruits, animals, and countries. 
+    The game provides visual feedback by drawing a stick figure on a canvas for each incorrect guess. 
+    The objective is to guess the word before the figure is fully drawn. 
+    The design is user-friendly and responsive, making it accessible on mobile devices. 
+    It features a dynamic interface with buttons for letter selection and a popup 
+    that displays the result after a win or loss, along with the option to start a new game.
+17.Loan Calculator-
+    This Loan Calculator is an easy-to-use tool that helps users calculate 
+    their monthly loan payments based on the loan amount, interest rate, and loan term. 
+    By entering the required values, users can instantly see their monthly payment. 
+    The calculator uses a standard formula to provide accurate results. 
+    It also features a "Reset" button to clear all fields and reset the monthly payment display. 
+    With a simple, clean design, the calculator is responsive and works well on both desktop 
+    and mobile devices, making it a convenient tool for anyone looking to estimate loan payments for various financial needs.
+18.Memory Card Game-
+    Introducing a fun and interactive Fruit Memory Card Game built with HTML, CSS, and JavaScript. 
+    This game challenges your memory skills as you try to match pairs of fruit images under a time limit. 
+    It includes a timer, a win/loss mechanism, and a stylish responsive design powered by Bootstrap. 
+    Whether you're a beginner or an experienced developer, this project showcases 
+    essential web development techniques like DOM manipulation, event handling, and CSS animations.
+
+    The game offers a delightful user experience with smooth transitions and visual effects. 
+    The timer adds an extra challenge to enhance the gameplay, and the game board dynamically adjusts for different screen sizes. 
+    The start and restart buttons make it easy to play again after winning or losing.
+19.News App-
+    This is a simple yet elegant News App built with HTML, CSS, and JavaScript, 
+    using the NewsAPI to fetch real-time news articles. 
+    It allows users to search for the latest news on various topics, 
+    display news articles in a card layout, and view detailed content by redirecting to external links. 
+    The app features a responsive design using Bootstrap, providing an intuitive and user-friendly experience. 
+    It also includes a search bar for easy filtering of news, a loading spinner to indicate fetching data, a
+    nd a visually appealing layout for displaying news articles with titles, descriptions, publish dates, and images.
+
+    This project demonstrates how to integrate third-party APIs to deliver real-time information to users and showcases
+     fundamental web development skills, including working with JavaScript, API calls, and front-end styling.
+20.Interactive Food Rating System with Dynamic Star Colors-
+    This is a modern food rating system that allows users to rate their favorite dishes using an interactive star rating feature. 
+    The rating mechanism dynamically changes the color of the stars based on the selected rating: 
+    red for 1 star, yellow for 2 and 3 stars, and green for 4 and 5 stars. 
+    The system provides a user-friendly experience with smooth hover and click interactions. 
+    It is perfect for integrating into food review platforms, restaurant websites, or any project that requires engaging user input for feedback.
+21.Multi-Step Form with Progress Bar-
+    This is a clean and modern multi-step form designed for user registration, guiding users through three main sections: 
+    Personal Information, Contact Information, and Account Setup. 
+    The form includes a visual progress bar, with seamless transitions between steps and validation to ensure all fields are completed. 
+    Built using HTML, CSS, and JavaScript, this form enhances the user experience while simplifying the data entry process. 
+    Perfect for websites that require user sign-ups with multiple steps!
+22.Typing Speed Test-
