@@ -65,3 +65,6 @@ Javascript Project
     Built using HTML, CSS, and JavaScript, this form enhances the user experience while simplifying the data entry process. 
     Perfect for websites that require user sign-ups with multiple steps!
 22.Typing Speed Test-
+23.Interactive Number Guessing Game
+
+This Number Guessing Game is built using React.js and Tailwind CSS, featuring an interactive UI, real-time timer, attempt counter, and smart validation. The game challenges users to guess a number between 1 and 100 before time runs out. It includes clean component logic, disabled states, restart functionality, and responsive design. A perfect mini-project for beginners to practice hooks, state management, and UI building with React and Tailwind.

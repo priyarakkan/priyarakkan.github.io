@@ -1,0 +1,81 @@
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+canvas {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Make form controls responsive */
+textarea,
+select,
+input[type="range"],
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Buttons container on smaller screens */
+#generateBtn,
+#resetBtn,
+#downloadBtn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   TABLETS (≤ 768px)
+   =========================== */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+
+  canvas {
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* ===========================
+   MOBILE (≤ 480px)
+   =========================== */
+@media (max-width: 480px) {
+  .card {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  canvas {
+    height: 200px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

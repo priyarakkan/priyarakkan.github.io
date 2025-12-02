@@ -5,12 +5,18 @@
     --lightCream:#fdf7e4;
     --softSage:#a1cda8;
 
-    --deepNavy:#0f172a;
-    --slate:#1e293b;
-    --skyBlue:#38bdf8;
-    --limeAccent:#a3e635;
-    --offWhite:#f8fafc;
-}
+    --header:#a35638;  /*Page background, header, footer*/
+    --sectionTitle:#a35638;  /*Section background, sidebar*/
+    --button:#662249;  /*Buttons, cards, UI elements*/
+    --hihglght:#a34054;  /*Highlights, hover effects*/
+    --title:#d7c79e; /*Calls to action, icons, titles*/
+    --text:#e9bcb9; /*Text, borders, light backgrounds */
+    --body:#d7c79e;
+    --cards:#9dab86;
+    --cardsBd:#e08f62;
+
+    
+}   
 html{
     scroll-behavior: smooth;
 }
@@ -18,12 +24,13 @@ html{
       Header 
 ***************/
 header{
-    background-color: var(--pastelBlue);
-    color: var(--deepNavy);
+    background-color: var(--header);
+    color: var(--title);
     font-size: 4rem;
+    text-align: center;
 }
 body{
-    background-color: var(--lightCream);
+    background-color: var(--body);
 }
 .cards{
     margin:1rem;
@@ -31,14 +38,29 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.cards>div {
-    border:solid 1px var(--lavendar);
-    border-radius: 5px;
+.card {
+    border:solid 1px var(--cardsBd);
+    border-radius: 10px;
     width:300px;
     height: 200px;
     cursor: pointer;
-    background-color: var(--lavendar);
-    color:#333;
+    background-color: var(--cards);
+    /* color:#333; */
     font-size: 2.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card>a {
+    color:var(--title);
+    text-decoration: none;
+}
+.card:hover{
+    transform: translateY(-5px) scale(1.03);
+    border-color: var(--cards);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }

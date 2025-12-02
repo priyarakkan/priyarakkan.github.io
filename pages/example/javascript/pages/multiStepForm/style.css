@@ -125,3 +125,98 @@ button:hover {
   font-size: 18px;
   display: none;
 }
+/* ================================
+   📱 Tablet (max-width: 768px)
+   ================================ */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .progress-bar::before {
+    top: 15px;
+  }
+
+  .step p {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  input,
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+
+/* ================================
+   📱 Mobile (max-width: 480px)
+   ================================ */
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Progress bar shrinks gracefully */
+  .step span {
+    font-size: 12px;
+  }
+
+  .step p {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* =================================================
+   📱 Extra Small Screens (max-width: 360px)
+   Optional: stack progress steps vertically
+   ================================================= */
+@media (max-width: 360px) {
+  .progress-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .progress-bar::before {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+  }
+}

@@ -56,3 +56,112 @@
 .calendar-weekdays div {
     padding: 5px 0;
 }
+/* ======================================
+   📌 TABLETS (≤ 900px)
+====================================== */
+@media (max-width: 900px) {
+
+    #eventCalendar {
+        grid-template-columns: 1fr; /* stack layout */
+        gap: 20px;
+    }
+
+    .calendarGrid {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 4px;
+    }
+
+    .calendar-day {
+        min-height: 70px;
+        padding: 4px;
+    }
+
+    .calendar-day h5 {
+        font-size: 0.9rem;
+    }
+}
+
+/* ======================================
+   📱 MOBILE (≤ 600px)
+====================================== */
+@media (max-width: 600px) {
+
+    /* Stack the layout vertically */
+    #eventCalendar {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .currentDateContainer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Calendar header buttons */
+    #prevMonth,
+    #nextMonth {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Weekday row */
+    .calendar-weekdays {
+        font-size: 0.75rem;
+        padding: 8px 0;
+    }
+
+    .calendar-weekdays div {
+        padding: 3px 0;
+    }
+
+    /* Calendar grid */
+    .calendarGrid {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 3px;
+    }
+
+    .calendar-day {
+        min-height: 60px;
+        padding: 2px;
+        flex-direction: column;
+    }
+
+    .calendar-day h5 {
+        font-size: 0.8rem;
+    }
+
+    .event {
+        font-size: 0.7rem;
+        padding: 1px 3px;
+    }
+
+    /* Modal scaling */
+    .modal-dialog {
+        max-width: 90%;
+    }
+
+    #saveEventBtn,
+    #deleteEventBtn {
+        width: 100%;
+    }
+}
+
+/* ======================================
+   📱 SMALL MOBILE (≤ 400px)
+====================================== */
+@media (max-width: 400px) {
+
+    .calendar-day {
+        min-height: 50px;
+        padding: 1px;
+    }
+
+    .calendar-grid h5 {
+        font-size: 0.7rem;
+    }
+
+    .event {
+        font-size: 0.65rem;
+    }
+}

@@ -77,3 +77,43 @@ span:hover {
 .hidden {
     display: none;
 }
+/* Tablet screens */
+@media (max-width: 768px) {
+    .auth-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    input, button {
+        width: 95%;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .auth-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: none; /* Optional: flatter look on mobile */
+    }
+
+    h2.title {
+        font-size: 20px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
+
