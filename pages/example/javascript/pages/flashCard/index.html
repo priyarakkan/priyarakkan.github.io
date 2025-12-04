@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashcard Sets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- APP CONTAINER -->
+  <div class="app">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Flashcards</h1>
+    </header>
+
+    <!-- HOME MENU -->
+    <main id="home" class="screen">
+      <div class="actions">
+        <button id="createSetBtn" class="primary">Create Set</button>
+        <button id="manageSetsBtn">Manage Sets</button>
+        <button id="studyBtn" class="accent">Study</button>
+      </div>
+
+      <!-- <section class="hint">
+        <p>Create sets of cards, import/export, then study with flip + swipe gestures.</p>
+      </section> -->
+
+      <section class="recent">
+        <h3>Recent sets</h3>
+        <div id="recentSets" class="sets-grid"></div>
+      </section>
+
+    </main>
+
+    <!-- CREATE / EDIT SET SCREEN -->
+    <section id="setEditor" class="screen hidden">
+      <div class="topbar">
+        <button id="backToHomeFromEditor" class="back">← Back</button>
+        <div class="editor-actions">
+          <input id="setTitleInput" placeholder="Set title (e.g. Spanish Basics)" />
+          <button id="saveSetBtn" class="primary">Save Set</button>
+          <button id="exportAllBtn">Export All</button>
+          <input id="importFile" type="file" accept="application/json" class="hidden" />
+          <button id="importBtn">Import</button>
+        </div>
+      </div>
+
+      <div class="editor-main">
+        <div class="left">
+          <h3>Cards</h3>
+
+          <div class="add-card">
+            <input id="cardQ" placeholder="Front (question)"/>
+            <input id="cardA" placeholder="Back (answer)"/>
+            <button id="addCardBtn" class="accent">Add Card</button>
+          </div>
+
+          <ul id="cardsList" class="cards-list"></ul>
+        </div>
+
+        <aside class="right">
+          <h3>Sets</h3>
+          <div id="setsList" class="sets-list"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PLAY / PICK SET SCREEN -->
+    <section id="pickSet" class="screen hidden">
+      <div class="topbar">
+        <button id="backToHomeFromPick" class="back">← Back</button>
+        <div class="editor-actions">
+          <button id="shuffleSetsBtn">Shuffle Sets</button>
+          <button id="exportAllBtn2">Export All</button>
+        </div>
+      </div>
+
+      <h2>Choose a set to study</h2>
+      <div id="playSets" class="sets-grid"></div>
+    </section>
+
+    <!-- STUDY SCREEN -->
+    <section id="player" class="screen hidden">
+      <div class="topbar">
+        <button id="exitPlayer" class="back">✕ Exit</button>
+        <div class="player-info">
+          <strong id="playerTitle"></strong>
+          <span id="playerProgress"></span>
+        </div>
+      </div>
+
+      <div id="cardArea" class="card-area">
+        <div id="flashcard" class="flashcard">
+          <div class="side front" id="frontSide"></div>
+          <div class="side back" id="backSide"></div>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <button id="prevCardBtn">Prev</button>
+        <button id="flipBtn" class="primary">Flip</button>
+        <button id="nextCardBtn">Next</button>
+      </div>
+
+      <div class="player-opts">
+        <label><input type="checkbox" id="shuffleCardsCheckbox"> Shuffle cards</label>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
